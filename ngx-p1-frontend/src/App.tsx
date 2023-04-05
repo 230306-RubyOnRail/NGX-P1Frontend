@@ -6,7 +6,6 @@ import Splash from './components/splash';
 function App() {
   return (
     <>
-    <div className="open"></div>
     <Nav />
     <Splash />
     </>
