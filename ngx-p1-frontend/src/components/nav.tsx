@@ -1,4 +1,5 @@
 import '../styles/nav.css'
+import { Link } from 'react-router-dom';
 
 export default function nav(){
     return(
@@ -7,12 +8,13 @@ export default function nav(){
                 ERS
             </h2>
             <nav className="navbar">
-                <a href="/home" className="home">Home</a>
-                <a href="/about" className="about">About</a>
+                <Link to="/">Home</Link>
+                <Link to="/reimbursement">Reimbursement</Link>
                 <button className="button-login">Login</button>
             </nav>
     
         </div>
-
+    
     );
+    
 }

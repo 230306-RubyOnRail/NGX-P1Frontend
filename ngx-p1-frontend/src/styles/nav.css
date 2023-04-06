@@ -6,6 +6,7 @@
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    z-index: -5;
 }
 .logo{
     font-size: 2em;
