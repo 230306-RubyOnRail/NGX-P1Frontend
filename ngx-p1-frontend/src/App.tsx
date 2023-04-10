@@ -4,6 +4,7 @@ import Nav from './components/nav';
 import Splash from './components/splash';
 import Reimbursement from './components/reimbursement';
 import { useState } from 'react';
+import Submit from "./components/submit";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Splash />}></Route>
         <Route path='/reimbursement' element={<Reimbursement currentUser={user}/>}></Route>
+        <Route path='/submit' element={<Submit currentUser={user}/>}></Route>
       </Routes>
     </BrowserRouter>
     

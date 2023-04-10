@@ -10,6 +10,7 @@ export default function nav(){
             <nav className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/reimbursement">Reimbursement</Link>
+                <Link to="/submit">Submit</Link>
                 <button className="button-login">Login</button>
             </nav>
     
