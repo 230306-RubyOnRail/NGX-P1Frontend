@@ -1,14 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Reimbursements from "../models/reimbursement";
 import "../styles/reimbursement.css"
 import User from "../models/users";
-
-interface IReim {
+import {approveDeny, deleteTable} from "../remote/services/reimbursement-service"
+interface iUser {
     currentUser: User | undefined
 }
-export default function Reimbursement(props: IReim){
+export default function Reimbursement(props: iUser){
     const [reimbursements, setReimbursement] = useState<{[key: string]: Array<Reimbursements>}>();
-    // reimbursement: [re1,re2,re3]
+    const [status, setStatus] = useState<{id: Number, status: string}>()
+    
+    useEffect(()=>{
+        console.log('Use effect is triggered');
+        updateTable();
+        return function(){
+            console.log('Use effect cleanup (unmounting component)');
+        }
+    }, [status])
+
+    let approveDenyToTable = (id: number, status: string) =>{
+        approveDeny(id, status);
+        setStatus({id, status})
+        // updateTable();
+    }
 
     let updateTable = async () => {
         // check at login that it sends the user to the right Reimbursement page
@@ -22,7 +36,7 @@ export default function Reimbursement(props: IReim){
         console.log("inside updateTable function")
         
         try{
-            let responseX = await fetch('http://localhost:3000/reimbursement/', {
+            let responseX = await fetch(`http://localhost:3000/reimbursement/`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `${props.currentUser?.token}`,
@@ -48,25 +62,13 @@ export default function Reimbursement(props: IReim){
         }
         
     }
-
-    let updateElement = async (value:number, m_status: string) =>{
-        let response = await fetch('http://localhost:3000/reimbursement/', {
-                method: 'GET',
-                headers: {
-                    'Authorization': `${props.currentUser?.token}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({id: value, status: m_status})
-                
-            })
-    }
     return(
     
         reimbursements ?
         <>
             {/* {console.log(reimbursements["reimbursement"][0].id)} */}
-            <h2 className="table-header">Welcome to the table</h2>
             <div className="table-container">
+            <h2 className="table-header">Welcome to the table</h2>
                 <table className="reimbursement-info">
                     
                         <thead>
@@ -75,19 +77,26 @@ export default function Reimbursement(props: IReim){
                                 <th>comment</th>
                                 <th>status</th>
                                 <th>approve/deny</th>
-            
                             </tr>
                         </thead>
                         <tbody className="body-reimbursement">
                         {
                             reimbursements["reimbursement"].map( (re) => {
+
                                 return(
-                                        <tr key={re.id} className="record">
-                                            <td>{re.id}</td>
-                                            <td>{re.comment}</td>
-                                            <td>{re.status}</td>
-                                            <><td><button>approve/deny</button></td></>
-                                        </tr> 
+                                    <tr key={re.id} className="record">
+                                        <td>{re.id}</td>
+                                        <td>{re.comment}</td>
+                                        <td>{re.status}</td>
+                                        
+                                        <>
+                                            {/* approve and update */}
+                                            <td><button onClick={() =>{approveDenyToTable(re.id, 'approve')}}>approve</button></td>
+                                            <td><button onClick={() =>{approveDenyToTable(re.id, 'deny')}}>deny</button></td>
+                                        </>
+                                        {/* delete */}
+                                        <td><button onClick={() =>{deleteTable(re.id)}}>DELETE</button></td>
+                                    </tr> 
                                 );
                             }) 
                         }
@@ -97,7 +106,7 @@ export default function Reimbursement(props: IReim){
         </>
         :
         <>
-            <button className="test" onClick={updateTable}>update</button>
+            
         </>
     );
 }
