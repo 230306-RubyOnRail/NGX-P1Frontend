@@ -16,3 +16,11 @@ export const deleteTable = (id: number) => {
 export const getReimbursements = async (id:number) =>{
     return appAuth.get(`reimbursement/${id}`)
 }
+export const postSubmit =(comment:string|undefined, price:number|undefined, id:number|undefined) => {
+    let body: any = {
+        'comment': `${comment}`,
+        'price': `${price}`
+    }
+    return appAuth.post(`reimbursement/${id}`, body)
+}
+
