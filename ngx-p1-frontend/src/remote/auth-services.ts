@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const appAuth = axios.create({
     baseURL: 'http://localhost:3000',
