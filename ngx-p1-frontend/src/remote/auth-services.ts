@@ -12,7 +12,6 @@ export const appAuth = axios.create({
 //         if(request.headers){
 //             request.headers['Authorization'] = `Bearer ${sessionStorage.getItem('token')}`
 //         }
-
 //         return request;
 //     }
 // )
