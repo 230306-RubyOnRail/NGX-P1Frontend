@@ -7,11 +7,11 @@ export const appAuth = axios.create({
     }
 })
 
-// appAuth.interceptors.request.use(
-//     (request) => {
-//         if(request.headers){
-//             request.headers['Authorization'] = `Bearer ${sessionStorage.getItem('token')}`
-//         }
-//         return request;
-//     }
-// )
+appAuth.interceptors.request.use(
+    (request) => {
+        if(request.headers){
+            request.headers['Authorization'] = `${sessionStorage.getItem('token')}`
+        }
+        return request;
+    }
+)

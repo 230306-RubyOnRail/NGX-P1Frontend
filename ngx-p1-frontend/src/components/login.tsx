@@ -29,11 +29,13 @@ export default function Login(props: ILoginProps) {
             
                 let response = await authenticate({email, password});
 
-                if(response.status === 201){
-                    let data: User = response.data;
+                if(response.status <= 201){
+                    let data: User = await response.data;
+                    
                     props.setCurrentUser(data);
                     sessionStorage.setItem('token', data.token);
-                    <Navigate to="/reimbursement"/>
+                   
+                    
                 } else {
                     setErrorMessage('Credentials invalid.');
                 }
@@ -48,7 +50,16 @@ export default function Login(props: ILoginProps) {
     return (
         props.currentUser ? 
         <>
-            <Navigate to="/reimbursement"/>
+            {props.currentUser.manager ?
+            <>
+                <Navigate to="/reimbursement"/>
+            </>
+            :
+            <>
+                <Navigate to="/user/id/reimbursement"/>
+            </>
+            
+            }
         </>
         : 
         <>

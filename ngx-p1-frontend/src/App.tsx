@@ -6,6 +6,7 @@ import Reimbursement from './components/reimbursement';
 import { useState } from 'react';
 import Submit from "./components/submit";
 import Login from './components/login';
+import ReimbursementEmployee from './components/reimbursementEmployee';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Login currentUser={user} setCurrentUser={setUser}/>}></Route>
         <Route path='/reimbursement' element={<Reimbursement currentUser={user}/>}></Route>
+        <Route path='/user/id/reimbursement' element={<ReimbursementEmployee currentUser={user}/>}></Route>
         <Route path='/submit' element={<Submit currentUser={user}/>}></Route>
       </Routes>
     </BrowserRouter>
