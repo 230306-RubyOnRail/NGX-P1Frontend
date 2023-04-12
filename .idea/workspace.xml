@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f478dd24-9223-44a9-bde5-28c87296fbd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ngx-p1-frontend/src/components/submit.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngx-p1-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ngx-p1-frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngx-p1-frontend/src/components/nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ngx-p1-frontend/src/components/nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngx-p1-frontend/src/components/reimbursementEmployee.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ngx-p1-frontend/src/components/reimbursementEmployee.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/history.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/history.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.umd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/router.umd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/dist/utils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/history.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/history.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@remix-run/router/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@remix-run/router/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/DOMUtils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/DOMUtils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/ExecutionEnvironment.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/ExecutionEnvironment.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/LocationUtils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/LocationUtils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/PathUtils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/PathUtils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/createBrowserHistory.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/createBrowserHistory.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/createHashHistory.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/createHashHistory.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/createMemoryHistory.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/createMemoryHistory.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/createTransitionManager.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/createTransitionManager.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/history/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/history/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-router-dom/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-router-dom/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-router-dom/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-router-dom/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-router-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-router-dom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-router/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-router/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-router/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-router/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-router/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-router/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/react-router/ts4.6/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/react-router/ts4.6/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/dom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/dom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/react-router-dom.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/react-router-dom.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/react-router-dom.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/react-router-dom.production.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/server.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/server.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/server.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/server.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/umd/react-router-dom.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/umd/react-router-dom.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/dist/umd/react-router-dom.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/dist/umd/react-router-dom.production.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/server.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/server.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/server.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/server.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/lib/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/lib/components.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/lib/context.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/lib/context.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/lib/hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/lib/hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/lib/use-sync-external-store-shim/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/lib/use-sync-external-store-shim/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/lib/use-sync-external-store-shim/useSyncExternalStoreShimClient.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/lib/use-sync-external-store-shim/useSyncExternalStoreShimClient.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/lib/use-sync-external-store-shim/useSyncExternalStoreShimServer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/lib/use-sync-external-store-shim/useSyncExternalStoreShimServer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/react-router.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/react-router.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/react-router.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/react-router.production.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/umd/react-router.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/umd/react-router.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/dist/umd/react-router.production.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/dist/umd/react-router.production.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-router/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OFNBTxaRCW0IuTgKpICe3sdpLd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\anikh\\Desktop\\project_1\\NGX-P1Frontend\\ngx-p1-frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="true" />
+        <entry key="com.haulmont.rcb.reactInspector" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f478dd24-9223-44a9-bde5-28c87296fbd5" name="Changes" comment="" />
+      <created>1681152235171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681152235171</updated>
+      <workItem from="1681152238158" duration="4475000" />
+      <workItem from="1681159719399" duration="6223000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
