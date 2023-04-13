@@ -6,6 +6,7 @@ import Reimbursement from './components/reimbursement';
 import { useState } from 'react';
 import Submit from "./components/submit";
 import Login from './components/login';
+import NewUser from './components/addUser';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Nav currentUser={user} setCurrentUser={setUser}/>
       <Routes>
         <Route path='/' element={<Login currentUser={user} setCurrentUser={setUser}/>}></Route>
+        <Route path='/user/add' element={<NewUser currentUser={user}/>}></Route>
         <Route path='/reimbursement' element={<Reimbursement currentUser={user}/>}></Route>
         <Route path='/submit' element={<Submit currentUser={user}/>}></Route>
       </Routes>
