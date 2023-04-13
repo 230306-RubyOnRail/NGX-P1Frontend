@@ -4,7 +4,7 @@ import {deleteTable, getReimbursements} from "../remote/services/reimbursement-s
 import Reimbursements from "../models/reimbursement";
 
 interface iUser{
-    currentUser: User
+    currentUser: User | undefined
 }
 export default function ReimbursementEmployee(props: iUser){
     const [employeeTable, setEmployeeTable] =  useState<{[key: string]: Array<Reimbursements>}>();
@@ -23,10 +23,11 @@ export default function ReimbursementEmployee(props: iUser){
         console.log("inside updateEmployee function")
 
         try{
-            let response = await getReimbursements(props.currentUser.id)
+            console.log(props.currentUser)
+            let response = await getReimbursements(props.currentUser)
             if (response.status === 200) {
                 setEmployeeTable(response.data);
-                // console.log(response.data);
+                console.log(response.data);
             } else {
                 console.log('Unable to retrieve to dos.');
             }

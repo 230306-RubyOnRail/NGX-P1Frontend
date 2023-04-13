@@ -30,8 +30,20 @@ export default function Nav(props: INavProps) {
                         //CHECK THIS!!!
                         props.currentUser ? 
                         <>
-                                <Button color="inherit"><Link to="/submit">Submit</Link></Button>
-                                <Button color="inherit"><Link className="link" to="/reimbursement">Reimbursements</Link></Button>
+
+                                
+
+                                {props.currentUser.manager ?
+                                <>
+                                    <Button color="inherit"><Link className="link" to="/reimbursement">Reimbursements</Link></Button>
+                                </>
+                                :
+                                <>
+                                    <Button color="inherit"><Link to="/submit">Submit</Link></Button>
+                                    <Button color="inherit"><Link className="link" to="/user/id/reimbursement">Reimbursements</Link></Button>
+                                </>
+                                }
+
                                 <Button color="inherit" onClick={logout}><Link className="link" to="/login">Logout</Link></Button>
                             </>
                             :
