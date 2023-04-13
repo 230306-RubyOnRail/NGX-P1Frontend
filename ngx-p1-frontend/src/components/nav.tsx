@@ -22,15 +22,15 @@ export default function Nav(props: INavProps) {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                                Welcome {props.currentUser?.name}
+                    </Typography>
                     {/* <Button color="inherit"><Link className="link" to="/home">Home</Link></Button> */}
                     {
                         //CHECK THIS!!!
                         props.currentUser ? 
                         <>
-                                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                                Welcome {props.currentUser?.name}
-                                </Typography>
+
                                 
 
                                 {props.currentUser.manager ?
@@ -43,6 +43,7 @@ export default function Nav(props: INavProps) {
                                     <Button color="inherit"><Link className="link" to="/user/id/reimbursement">Reimbursements</Link></Button>
                                 </>
                                 }
+
                                 <Button color="inherit" onClick={logout}><Link className="link" to="/login">Logout</Link></Button>
                             </>
                             :
