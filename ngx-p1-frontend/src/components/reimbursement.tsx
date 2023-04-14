@@ -44,7 +44,7 @@ export default function Reimbursement(props: iUser){
             let responseX = await fetch(`http://localhost:3000/reimbursement/`, {
                 method: 'GET',
                 headers: {
-                    'Authorization': `${props.currentUser?.token}`,
+                    'Authorization': `${sessionStorage.getItem('token')}`,
                     'Content-Type': 'application/json'
                 }
                 // body: JSON.stringify({id: 2, status: 'denied'})
