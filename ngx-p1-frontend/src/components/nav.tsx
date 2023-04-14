@@ -16,6 +16,7 @@ export default function Nav(props: INavProps) {
 
     function logout() {
         props.setCurrentUser(undefined);
+        sessionStorage.clear();
     }
 
     return (
@@ -36,18 +37,20 @@ export default function Nav(props: INavProps) {
                                 {props.currentUser.manager ?
                                 <>
                                     <Button color="inherit"><Link className="link" to="/reimbursement">Reimbursements</Link></Button>
+                                    <Button color="inherit"><Link className="link" to="/user/add">Add user</Link></Button>
                                 </>
                                 :
                                 <>
-                                    <Button color="inherit"><Link to="/submit">Submit</Link></Button>
+                                    <Button color="inherit"><Link className="link" to="/submit">Submit</Link></Button>
                                     <Button color="inherit"><Link className="link" to="/user/id/reimbursement">Reimbursements</Link></Button>
+                                    
                                 </>
                                 }
 
-                                <Button color="inherit" onClick={logout}><Link className="link" to="/login">Logout</Link></Button>
+                                <Button color="inherit" onClick={logout}><Link className="link" to="/">Logout</Link></Button>
                             </>
                             :
-                            <Button color="inherit"><Link className="link" to="/login">Login</Link></Button>
+                            <Button color="inherit"><Link className="link" to="/">Login</Link></Button>
                     }
                 </Toolbar>
             </AppBar>
