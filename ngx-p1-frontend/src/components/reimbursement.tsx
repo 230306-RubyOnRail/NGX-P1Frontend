@@ -9,6 +9,7 @@ interface iUser {
 export default function Reimbursement(props: iUser){
     const [reimbursements, setReimbursement] = useState<{[key: string]: Array<Reimbursements>}>();
     const [status, setStatus] = useState<{id: Number, status: string}>()
+    const [id, setId] = useState<number>()
     
     useEffect(()=>{
         console.log('Use effect is triggered');
@@ -16,14 +17,18 @@ export default function Reimbursement(props: iUser){
         return function(){
             console.log('Use effect cleanup (unmounting component)');
         }
-    }, [status])
+    }, [status, id])
 
     let approveDenyToTable = (id: number, status: string) =>{
         approveDeny(id, status);
         setStatus({id, status})
         // updateTable();
     }
-
+    let contentDelete = (id:number) =>{
+        setId(id)
+        deleteTable(id)
+        updateTable()
+    }
     let updateTable = async () => {
         // check at login that it sends the user to the right Reimbursement page
         // server sends token to user to keep in "local storage"
@@ -39,7 +44,7 @@ export default function Reimbursement(props: iUser){
             let responseX = await fetch(`http://localhost:3000/reimbursement/`, {
                 method: 'GET',
                 headers: {
-                    'Authorization': `${props.currentUser?.token}`,
+                    'Authorization': `${sessionStorage.getItem('token')}`,
                     'Content-Type': 'application/json'
                 }
                 // body: JSON.stringify({id: 2, status: 'denied'})
@@ -95,7 +100,7 @@ export default function Reimbursement(props: iUser){
                                             <td><button onClick={() =>{approveDenyToTable(re.id, 'deny')}}>deny</button></td>
                                         </>
                                         {/* delete */}
-                                        <td><button onClick={() =>{deleteTable(re.id)}}>DELETE</button></td>
+                                        <td><button onClick={() =>{contentDelete(re.id)}}>DELETE</button></td>
                                     </tr> 
                                 );
                             }) 
