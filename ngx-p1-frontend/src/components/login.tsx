@@ -19,7 +19,7 @@ export default function Login(props: ILoginProps) {
         
     }
 
-    let login = async () => {
+    let login = async (e: SyntheticEvent) => {
      
         if(email && password){
             setErrorMessage('');
@@ -34,6 +34,8 @@ export default function Login(props: ILoginProps) {
                     
                     props.setCurrentUser(data);
                     sessionStorage.setItem('token', data.token);
+                    e.preventDefault();
+                    
                    
                     
                 } else {
