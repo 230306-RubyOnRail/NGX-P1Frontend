@@ -41,7 +41,7 @@ export default function Reimbursement(props: iUser){
         console.log("inside updateTable function")
         
         try{
-            let responseX = await fetch(`http://ec2-34-224-41-156.compute-1.amazonaws.com:3000/reimbursement/`, {
+            let responseX = await fetch(`http://ec2-54-89-171-138.compute-1.amazonaws.com:3000/reimbursement/`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `${sessionStorage.getItem('token')}`,
