@@ -16,20 +16,20 @@ import jwtDecode from 'jwt-decode';
 
 function App() {
   let [user,setUser] = useState<User>();
-  // useEffect(() => {
-  //   const loggedInUser: string | null = (sessionStorage.getItem('token') || '{}')
-  //   if (loggedInUser) {
-  //     let decoded: User = jwtDecode(loggedInUser)
-  //     // console.log(decoded)
-  //     // let foundUser: User  = (JSON.parse(decoded) || {});
-  //     // console.log(foundUser)
-  //     setUser(decoded);
-  //     sessionStorage.setItem('token', loggedInUser)
+  useEffect(() => {
+    const loggedInUser: string | null = (sessionStorage.getItem('token') || '{}')
+    if (loggedInUser) {
+      let decoded: User = jwtDecode(loggedInUser)
+      // console.log(decoded)
+      // let foundUser: User  = (JSON.parse(decoded) || {});
+      // console.log(foundUser)
+      setUser(decoded);
+      sessionStorage.setItem('token', loggedInUser)
       
-  //   }else{
-  //     <Navigate to='/'/>
-  //   }
-  // }, []);
+    }else{
+      <Navigate to='/'/>
+    }
+  }, []);
   // if (sessionStorage.getItem != null){
   //  let token: string | null = (sessionStorage.getItem('token') || '{}')
   //  let decoded: string | null = jwtDecode(token)
