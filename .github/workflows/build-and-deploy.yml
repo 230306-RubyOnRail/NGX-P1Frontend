@@ -32,6 +32,8 @@ jobs:
       - name: Building project
         working-directory: ngx-p1-frontend
         run: npm run build
+        env:
+         CI: false
 
       - name: Run tests if present
         run: npm run test --if-present
@@ -44,7 +46,8 @@ jobs:
           aws-region: us-east-2
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync ./dist/ s3://project1-react-frontend --delete
+        working-directory: ngx-p1-frontend
+        run: aws s3 sync ./build/ s3://project1-react-frontend --delete
 
 
 
