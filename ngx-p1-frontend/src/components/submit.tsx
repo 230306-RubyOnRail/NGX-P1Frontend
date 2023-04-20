@@ -12,14 +12,19 @@ interface iUser{
 
 function Submit(props:iUser){
 const [comment,setComment] = useState<string>()
-const [price, setPrice] = useState<number>()
-    let onSubmit = () =>{
-    postSubmit(comment,price,props.currentUser?.id)
+const [price, setPrice] = useState<string>()
+    let onSubmit = async () =>{
+        let response = await postSubmit(comment,price,props.currentUser?.id)
+        if(response.status <= 201){
+            // give green check mark
+        }
     }
     return (
         <>
-            <TextField id="outlined-basic" value = "" label="Comment" variant="outlined" onChange={(e) =>{setComment(e.target.value)}} />
-            <TextField id="outlined-basic" label="Price" value = ""  variant="outlined" onChange={(e) =>{setPrice(Number(e.target.value ))}} />
+
+            <TextField id="outlined-basic"  label="Comment" variant="outlined" onChange={(e) =>{setComment(e.target.value)}} />
+            <TextField id="outlined-basic" label="Price"  variant="outlined" onChange={(e) =>{setPrice(String(e.target .value ))}} />
+
             <Button variant="contained" onClick={onSubmit}>Submit</Button>
 
 
