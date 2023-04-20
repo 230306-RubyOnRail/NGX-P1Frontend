@@ -1,12 +1,8 @@
 ---
 name: Build and Deploy React App to S3
 on:
-  push:
-    branches:
-    - login
-  pull_request:
-    branches:
-    - main
+  workflow_dispatch:
+  
 
 jobs:
   build-and-deploy:
@@ -26,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Building project
-        working-directory: ngx-p1-frontend/package.json
+        working-directory: ngx-p1-frontend
         run: npm run build
 
       - name: Run tests if present
