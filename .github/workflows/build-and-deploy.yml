@@ -45,7 +45,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync ./dist/ s3://project1-react-frontend --delete
+        run: aws s3 sync ./build/ s3://project1-react-frontend --delete
 
 
 
