@@ -23,7 +23,7 @@ const [price, setPrice] = useState<string>()
         <>
 
             <TextField id="outlined-basic"  label="Comment" variant="outlined" onChange={(e) =>{setComment(e.target.value)}} />
-            <TextField id="outlined-basic" label="Price"  variant="outlined" onChange={(e) =>{setPrice(String(e.target.value ))}} />
+            <TextField id="outlined-basic" label="Price"  variant="outlined" onChange={(e) =>{setPrice(String(e.target.value))}} />
 
             <Button variant="contained" onClick={onSubmit}>Submit</Button>
 
