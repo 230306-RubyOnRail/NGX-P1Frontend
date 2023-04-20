@@ -15,7 +15,7 @@ function NewUser(props: iUser) {
     const [name, setName] = useState<string>()
     const [email, setEmail] = useState<string>()
     const [password, setPassword] = useState<string>()
-    const [manager, setManager] = useState<boolean>()
+    const [manager, setManager] = useState<boolean>(false)
     const [message, setMessage] = useState<string>()
     
 
