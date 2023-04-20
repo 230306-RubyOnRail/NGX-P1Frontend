@@ -16,7 +16,7 @@ export function Comment(props: IComment) {
                 }}
                 onKeyDown={(e:any) => {
                     console.log(e.key)
-                    if(e.key == 'Enter') {
+                    if(e.key === 'Enter') {
                         return props.onEditComplete(props.id,e.target.value)
                     }
                 }}
