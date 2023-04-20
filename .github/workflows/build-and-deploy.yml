@@ -23,6 +23,7 @@ jobs:
       - name: Installing dependencies
         run: npm install
       - name: Building project
+        working-directory: ./ngx-p1-frontend
         run: npm run build
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
