@@ -1,14 +1,14 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import User from './models/users'
 import Nav from './components/nav';
 import Reimbursement from './components/reimbursement';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import Submit from "./components/submit";
 import Login from './components/login';
 import NewUser from './components/addUser';
 import ReimbursementEmployee from './components/reimbursementEmployee';
-import jwtDecode from 'jwt-decode';
+// import jwtDecode from 'jwt-decode';
 
 
 
@@ -16,20 +16,20 @@ import jwtDecode from 'jwt-decode';
 
 function App() {
   let [user,setUser] = useState<User>();
-  useEffect(() => {
-    const loggedInUser: string | null = (sessionStorage.getItem('token') || '{}')
-    if (loggedInUser) {
-      let decoded: User = jwtDecode(loggedInUser)
-      // console.log(decoded)
-      // let foundUser: User  = (JSON.parse(decoded) || {});
-      // console.log(foundUser)
-      setUser(decoded);
-      sessionStorage.setItem('token', loggedInUser)
+//   useEffect(() => {
+//     const loggedInUser: string | null = (sessionStorage.getItem('token') || '{}')
+//     if (loggedInUser) {
+//       let decoded: User = jwtDecode(loggedInUser)
+//       // console.log(decoded)
+//       // let foundUser: User  = (JSON.parse(decoded) || {});
+//       // console.log(foundUser)
+//       setUser(decoded);
+//       sessionStorage.setItem('token', loggedInUser)
       
-    }else{
-      <Navigate to='/'/>
-    }
-  }, []);
+//     }else{
+//       <Navigate to='/'/>
+//     }
+//   }, []);
 
   return (
     <>
