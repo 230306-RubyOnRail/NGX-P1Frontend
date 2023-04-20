@@ -16,20 +16,20 @@ import ReimbursementEmployee from './components/reimbursementEmployee';
 
 function App() {
   let [user,setUser] = useState<User>();
-  // useEffect(() => {
-  //   const loggedInUser: string | null = (sessionStorage.getItem('token') || '{}')
-  //   if (loggedInUser) {
-  //     let decoded: User = jwtDecode(loggedInUser)
-  //     // console.log(decoded)
-  //     // let foundUser: User  = (JSON.parse(decoded) || {});
-  //     // console.log(foundUser)
-  //     setUser(decoded);
-  //     sessionStorage.setItem('token', loggedInUser)
+  useEffect(() => {
+    const loggedInUser: string | null = (sessionStorage.getItem('token') || '{}')
+    if (loggedInUser) {
+      let decoded: User = jwtDecode(loggedInUser)
+      // console.log(decoded)
+      // let foundUser: User  = (JSON.parse(decoded) || {});
+      // console.log(foundUser)
+      setUser(decoded);
+      sessionStorage.setItem('token', loggedInUser)
       
-  //   }else{
-  //     <Navigate to='/'/>
-  //   }
-  // }, []);
+    }else{
+      <Navigate to='/'/>
+    }
+  }, []);
 
   return (
     <>
