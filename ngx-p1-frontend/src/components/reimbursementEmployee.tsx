@@ -9,7 +9,6 @@ interface iUser{
 }
 export default function ReimbursementEmployee(props: iUser){
     const [employeeTable, setEmployeeTable] =  useState<{[key: string]: Array<Reimbursements>}>();
-    const [usercomment, setUsercomment] = useState<string>();
     const [isEditing, setIsEditing] = useState<{isEditing: boolean, re: any}>({isEditing: false, re: null});
 
     const startEdit = (r: Reimbursements) => {
@@ -53,7 +52,7 @@ export default function ReimbursementEmployee(props: iUser){
         if(employeeTable)
         {
             const index = employeeTable["reimbursement"].findIndex(
-                (i:any) => i.id == isEditing.re
+                (i:any) => i.id === isEditing.re
             )
 
             setEmployeeTable((xValue: {[key: string]: Array<Reimbursements>}| undefined)=>{
