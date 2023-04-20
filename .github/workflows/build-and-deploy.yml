@@ -15,7 +15,7 @@ jobs:
    
     steps:
       - name: Checking out code 
-        uses: actions/checkout@npx-p1-frontend
+        uses: actions/checkout@main
       - name: Installing Node.js
         uses: actions/setup-node@v3
         with:
