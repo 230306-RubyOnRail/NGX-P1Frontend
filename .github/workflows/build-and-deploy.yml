@@ -46,6 +46,7 @@ jobs:
           aws-region: us-east-2
 
       - name: Deploy to S3 bucket
+        working-directory: ngx-p1-frontend
         run: aws s3 sync ./build/ s3://project1-react-frontend --delete
 
 
