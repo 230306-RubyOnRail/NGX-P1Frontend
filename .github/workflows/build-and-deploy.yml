@@ -2,6 +2,13 @@
 name: Build and Deploy React App to S3
 on:
   workflow_dispatch:
+
+  #  push:
+  #   branches:
+  #   - login
+  # pull_request:
+  #   branches:
+  #   - main
   
 
 jobs:
@@ -19,6 +26,7 @@ jobs:
           node-version: "16"
 
       - name: Installing dependencies
+        working-directory: ngx-p1-frontend
         run: npm install
 
       - name: Building project
