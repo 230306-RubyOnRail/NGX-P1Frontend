@@ -15,7 +15,7 @@ jobs:
    
     steps:
       - name: Checking out code 
-        uses: actions/checkout@v1
+        uses: actions/checkout@npx-p1-frontend
       - name: Installing Node.js
         uses: actions/setup-node@v3
         with:
@@ -23,7 +23,6 @@ jobs:
       - name: Installing dependencies
         run: npm install
       - name: Building project
-        working-directory: ./ngx-p1-frontend
         run: npm run build
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
