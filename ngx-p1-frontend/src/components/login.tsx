@@ -65,7 +65,7 @@ export default function Login(props: ILoginProps) {
         </>
         : 
         <>
-            <p> Automation is fun!! </p>
+            
             <p>Login</p>
             <div>
                 <input type="text" id="login-email" placeholder="Enter your email" onChange={updateEmail}/>
